@@ -10,7 +10,7 @@ def parse_json(data):
 
 
 app = Flask(__name__)
-uri = "mongodb+srv://<userid>:<password>>@corider.ayks3du.mongodb.net/?retryWrites=true&w=majority"
+uri = "mongodb+srv://<userid>:<password>@corider.ayks3du.mongodb.net/?retryWrites=true&w=majority"
 client = MongoClient(uri)
 collection = client.corider.user_info
 
@@ -59,7 +59,7 @@ def crete_user():  # put application's code here
         return jsonify('Error!', {'MongoDB Error Code': str(e.code)})
 
 
-@app.route('/users/<int:id>', methods=['POST'])
+@app.route('/users/<int:id>', methods=['PUT'])
 def update_user_id(id):  # put application's code here
     try:
         data = request.get_json()
