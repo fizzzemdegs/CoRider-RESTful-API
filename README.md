@@ -7,7 +7,7 @@ A Flask application that performs CRUD (Create, Read, Update, Delete) operations
 Clone my-project with git
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/fizzzemdegs/CoRider-RESTful-API.git
 ```
 Run via docker 
 ```bash
