@@ -12,7 +12,7 @@ def parse_json(data):
 app = Flask(__name__)
 api = Api(app)
 
-uri = "mongodb+srv://fardin999hossain:UQlmItjL0lXTZ4yM@corider.ayks3du.mongodb.net/?retryWrites=true&w=majority"
+uri = "mongodb+srv://<username>:<password>@corider.ayks3du.mongodb.net/?retryWrites=true&w=majority"
 client = MongoClient(uri)
 collection = client.corider.user_info
 
